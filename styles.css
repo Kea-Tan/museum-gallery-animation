@@ -1,1 +1,62 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f4f4f4;
+    overflow: hidden;
+}
 
+.gallery-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+}
+
+.painting {
+    width: 200px;
+    height: 300px;
+    background: linear-gradient(135deg, #ffe9a3, #d4a373);
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    position: absolute;
+    transform: translateY(100vh);
+    opacity: 0;
+    animation: fadeInUp 4s ease-in-out infinite;
+}
+
+#painting1 {
+    animation-delay: 0s;
+}
+
+#painting2 {
+    animation-delay: 1s;
+}
+
+#painting3 {
+    animation-delay: 2s;
+}
+
+#painting4 {
+    animation-delay: 3s;
+}
+
+@keyframes fadeInUp {
+    0% {
+        transform: translateY(100vh);
+        opacity: 0;
+    }
+    50% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(-100vh);
+        opacity: 0;
+    }
