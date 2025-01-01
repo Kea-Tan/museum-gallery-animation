@@ -1,1 +1,0 @@
-# museum-gallery-animation
